@@ -2,7 +2,7 @@ FROM ubuntu
 WORKDIR /home
 RUN apt-get update -y 
 
-RUN apt install -y build-essential golang rustc
+RUN apt install -y build-essential golang rustc vim git
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
 
 RUN rustup target add wasm32-unknown-unknown
